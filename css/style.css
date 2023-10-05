@@ -1,0 +1,988 @@
+/* -- fonts css part start -- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
+/* -- fonts css part end -- */
+/* -- basic css part start -- */
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.common_button {
+    border-radius: 16px;
+    background: #EFD372;
+    padding: 28px 39px;
+    color: #274C5B;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.common_button span {
+    float: right;
+    width: 19px;
+    margin-left: 10px;
+}
+
+.common_head p {
+    color: #7EB693;
+    font-family: 'Yellowtail', cursive;
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.common_head h2 {
+    width: 702px;
+    color: #274C5B;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+/* -- basic css part end -- */
+/* -- nav-bar part start -- */
+#nav {
+    padding: 69px 0;
+}
+
+.nav_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_logo {
+    width: 199px;
+}
+.nav_items ul {
+    display: flex;
+    gap: 30px;
+}
+
+.nav_items ul li {
+    position: relative;
+}
+
+.nav_items ul li a {
+    color: #274C5B;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.dropdown_manu {
+    display: none;
+}
+
+.nav_items ul li:hover .dropdown_manu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown_manu ul {
+    display: block;
+    margin: 10px;
+    background: #fff;
+    width: 150px;
+    padding: 10px;
+}
+
+.dropdown_manu ul li {
+    padding: 8px;
+}
+
+.dropdown_manu ul li a:hover {
+    border-bottom: 1px solid #525C60;
+}
+
+.search_box {
+    position: relative;
+}
+
+.search_box input {
+    width: 376px;
+    height: 66px;
+    border-radius: 36px;
+    background: #FAFAFA;
+    border: none;
+    padding: 30px;
+}
+
+.search_button {
+    position: absolute;
+    top: 5px;
+    right: 6px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #7EB693;
+    text-align: center;
+}
+
+.search_button button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.search_button button i {
+    line-height: 56px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.cart_box {
+    width: 159px;
+    height: 66px;
+    border-radius: 33px;
+    border: 1px solid #E0E0E0;
+    position: relative;
+}
+
+.cart_icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #274C5B;
+    top: 5px;
+    left: 6px;
+    position: absolute;
+    text-align: center;
+    cursor: pointer;
+}
+
+.cart_icon i {
+    font-size: 18px;
+    color: #fff;
+    line-height: 56px;
+}
+
+.cart_text p {
+    margin: 21px 0 24px 74px;
+    color: #274C5B;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* -- nav-bar part end -- */
+/* -- banner css part start -- */
+#banner {
+    background: url(../images/Banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner_texts {
+    padding: 246px 0;
+}
+
+.banner_texts p {
+    color: #68A47F;
+    font-family: 'Yellowtail', cursive;
+    font-size: 36px;
+    font-weight: 400;
+    margin-left: 8px;
+}
+
+.banner_texts h1 {
+    width: 530px;
+    color: #274C5B;
+    font-family: 'Roboto', sans-serif;
+    font-size: 70px;
+    font-weight: 800;
+    margin-bottom: 23px;
+}
+
+/* -- banner css part end -- */
+/* -- offer-banner part start -- */
+#offer_banner {
+    padding: 154px 0 190px 0;
+}
+
+.offer_row {
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+}
+
+.offer_image {
+    position: relative;
+    width: 682px;
+}
+
+.offer_col .offer_image img {
+    width: 100%;
+    border-radius: 36px;
+}
+
+.offer_col .offer_text {
+    position: absolute;
+    top: 109px;
+    left: 55px;
+}
+
+.offer_col .offer_text p {
+    color: #7EB693;
+    font-family: 'Yellowtail', cursive;
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.offer_col .offer_text h2 {
+    width: 265px;
+    color: #274C5B;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.offer_col .offer_one p {
+    color: #fff;
+}
+
+.offer_col .offer_one h2 {
+    color: #fff;
+}
+
+/* -- offer-banner part end -- */
+/* -- about css part start -- */
+#about {
+    background: #F9F8F8;
+    padding: 186px 0 199px 0;
+}
+
+.about_row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about_paragraph p {
+    width: 690px;
+    color: #525C60;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+    margin-top: 14px;
+}
+
+.about_list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 46px 0;
+}
+
+.list_item {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+}
+
+.list_item .list_icon {
+    width: 101px;
+    height: 101px;
+    background: #fff;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.list_item .list_icon img {
+    padding: 25px;
+}
+
+.list_item .list_title h2 {
+    color: #274C5B;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 7px;
+}
+
+.list_item .list_title p {
+    width: 444px;
+    color: #525C60;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29px;
+}
+
+.about_button .common_button {
+    background: #274C5B;
+    color: #fff;
+}
+
+/* -- about css part end -- */
+/* -- products css part start -- */
+#products {
+    padding-top: 176px;
+    padding-bottom: 200px;
+}
+
+#products .common_head {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#products .common_head h2 {
+    width: 100%;
+}
+
+.products_row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 122px;
+}
+
+.common_products_col {
+    width: 335px;
+    border-radius: 30px;
+    background: #F9F8F8;
+    padding: 29px 30px 17px 30px;
+}
+
+.products_tag a {
+    height: 31px;
+    border-radius: 8px;
+    background: #274C5B;
+    padding: 5px 12px;
+    color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.products_image img {
+    width: 100%;
+}
+
+.products_title h3 {
+    color: #274C5B;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 13px;
+}
+
+.card_line {
+    width: 100%;
+    height: 1px;
+    background: #DEDDDD;
+}
+
+.products_price_review {
+    margin-top: 9px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.products_price_review .price h3 {
+    color: #274C5B;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.products_price_review .price h3 span {
+    color: #B8B8B8;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+.products_price_review .review i {
+    font-size: 18px;
+    color: #FFA858;
+}
+
+.products_button {
+    text-align: center;
+}
+
+.products_button .common_button {
+    background: #274C5B;
+    color: #fff;
+}
+
+/* -- products css part end -- */
+/* -- testimonial css part start -- */
+#testimonial {
+    padding: 164px 0;
+    background: url(../images/testimonial_bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#testimonial .common_head {
+    text-align: center;
+}
+
+#testimonial .common_head h2 {
+    width: 100%;
+}
+
+.testimonial_review {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.testimonial_review .customer_photo img {
+    width: 150px;
+    text-align: center;
+}
+
+.testimonial_review .review_icon {
+    margin-top: 20px;
+}
+
+.testimonial_review .review_icon i {
+    color: #FFA858;
+    font-size: 18px;
+}
+
+.testimonial_text p {
+    width: 780px;
+    color: #525C60;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.testimonial_customar_name h2 {
+    color: #274C5B;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.testimonial_customar_name p {
+    color: #525C60;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 19px;
+}
+
+.dot_bar i {
+    font-size: 10px;
+    color: #C4C4C4;
+}
+
+.dot_bar span i {
+    color: #68A47F;
+}
+
+.testimonial_line {
+    width: 1109px;
+    height: 1px;
+    background: #E0E0E0;
+    margin: 102px auto;
+}
+
+.counetr_row .counter_col {
+    width: 211px;
+    height: 211px;
+    background: url(../images/counter_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.counetr_row .counter_col .counter_text {
+    text-align: center;
+    padding: 65px 0;
+}
+
+.counter_col .counter_text h2 {
+    color: #274C5B;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.counter_col .counter_text p {
+    color: #274C5B;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 165.4%;
+}
+
+.counetr_row {
+    display: flex;
+    justify-content: center;
+    gap: 62px;
+}
+
+/* -- testimonial css part end -- */
+/* -- offer-organic css part start -- */
+
+
+/* -- offer-organic css part end -- */
+/* -- offer-organic css part start -- */
+#offer_organic {
+    padding: 201px 0;
+    background: #274C5B;
+}
+
+.offer_organic_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.offer_organic_head .common_head h2 {
+    color: #fff;
+}
+
+.organic_products_row {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* -- offer-organic css part end -- */
+/* -- eco css part start -- */
+.eco_friendly_row {
+    display: flex;
+}
+
+.eco_friendly_row .eco_bg {
+    width: 952px;
+    position: relative;
+}
+
+.eco_friendly_row .eco_bg img {
+    width: 100%;
+}
+
+.eco_body_text {
+    width: 778px;
+    padding: 78px 0px 77px 89px;
+    border-radius: 30px;
+    background: #fff;
+    position: absolute;
+    top: 100px;
+    left: 90%;
+}
+
+.eco_body_text .common_head h2 {
+    width: 442px;
+}
+
+.eco_list_row {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-top: 35px;
+}
+
+.eco_list_col h2 {
+    color: #274C5B;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+
+.eco_list_col p {
+    width: 635px;
+    color: #525C60;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29px;
+}
+
+/* -- eco css part end -- */
+/* -- gallery css part start -- */
+#gallery {
+    padding: 187px 0;
+    background: #F1F8F4;
+}
+
+#gallery .gallery_row {
+    display: flex;
+    justify-content: space-between;
+    gap: 42px;
+}
+
+.gallery_row .gallery_col {
+    width: 612px;
+    position: relative;
+}
+
+.gallery_row .gallery_col a {
+    width: 320px;
+    height: 96px;
+    background: #fff;
+    padding: 33px 83px;
+    border-radius: 20px;
+    color: #274C5B;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* -- gallery css part end -- */
+/* -- news css part start -- */
+#news {
+    padding-top: 177px;
+    padding-bottom: 185px;
+}
+
+.news_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.news_head_button .common_button {
+    background: transparent;
+    border: 1px solid #274C5B;
+    transition: all linear .3s;
+}
+
+.news_head_button .common_button:hover {
+    background: #EFD372;
+}
+
+.nesw_cards_row {
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nesw_cards_row .news_card_col {
+    width: 677px;
+    height: 524px;
+    padding: 43px 32px;
+    background: url(../images/news_1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.nesw_cards_row .news_card_col:nth-child(2) {
+    background: url(../images/news_2.png);
+}
+
+.news_card_col .date {
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    background: #fff;
+    text-align: center;
+}
+
+.news_card_col .date h2 {
+    color: #274C5B;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    padding: 15px 23px;
+}
+
+.news_card_col .date h2 span {
+    display: block;
+    font-size: 20px;
+}
+
+.news_card_col .news_text {
+    margin-top: 137px;
+    width: 100%;
+    padding: 46px 57px 60px 57px;
+    border-radius: 30px;
+    background: #fff;
+    box-shadow: 0px 20px 35px 0px rgba(167, 167, 167, 0.25);
+}
+
+.news_text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.news_text .admin {
+    display: flex;
+    gap: 8px;
+}
+
+.admin .admin_icon i {
+    color: #EFD372;
+    font-size: 18px;
+}
+
+.admin .admin_name h3 {
+    color: #274C5B;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.news_text .news_title h2 {
+    color: #274C5B;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.news_text .news_title p {
+    color: #525C60;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29px
+}
+
+/* -- news css part end -- */
+/* -- newsletter css part start -- */
+.newsletter {
+    background: url(../images/footer_bg.png);
+    background-size: cover;
+    background-position: center;
+    padding: 100px 71px;
+    margin-bottom: 117px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newsletter_text h2 {
+    width: 357px;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.newsletter_Subscribe {
+    display: flex;
+    gap: 6px;
+}
+
+.newsletter_Subscribe input {
+    border: none;
+    background: #fff;
+    width: 349px;
+    height: 80px;
+    border-radius: 16px;
+    padding: 28px 23px 31px;
+}
+
+.newsletter_Subscribe input::placeholder {
+    color: #ABABAB;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.newsletter_Subscribe a {
+    width: 220px;
+    height: 80px;
+    border-radius: 16px;
+    background: #274C5B;
+    line-height: 80px;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    transition: all linear .3s;
+}
+
+.newsletter_Subscribe a:hover {
+    background: #EFD372;
+    color: #274C5B;
+}
+
+/* -- newsletter css part end -- */
+/* -- foote css part start -- */
+.footer_row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 107px;
+}
+
+.contact_col {
+    padding-right: 51px;
+    border-right: 1px solid #D4D4D4;
+    text-align: right;
+}
+
+.contact_col .contact_head h2 {
+    color: #274C5B;
+    font-family: ' Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.contact_text_row {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact_col .contect_text_col h3 {
+    color: #525C60;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.contact_col .contect_text_col a {
+    color: #525C60;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 165%;
+}
+
+.footer_logo_col {
+    width: 626px;
+    text-align: center;
+}
+
+.footer_logo img {
+    width: 199px;
+    margin-bottom: 23px;
+}
+
+.footer_logo_text p {
+    width: 543px;
+    margin: 0 auto;
+    color: #525C60;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 49px;
+}
+
+.footer_icon {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer_icon a {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #EFF6F1;
+    transition: all linear .3s;
+}
+
+.footer_icon a:hover {
+    background: #EFD372;
+}
+
+.footer_icon a i {
+    font-size: 25px;
+    color: #274C5B;
+    line-height: 60px;
+    text-align: center;
+}
+
+.footer_pages_col {
+    padding-left: 50px;
+    border-left: 1px solid #D4D4D4;
+}
+
+.footer_pages_col .pages_head h2 {
+    color: #274C5B;
+    font-family: ' Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.pages_text_row {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.pages_text_row a {
+    color: #525C60;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.copyright_row {
+    width: 100;
+    height: 63px;
+    border-top: 1px solid #D4D4D4;
+    ;
+}
+
+.copyright_row p {
+    color: #525C60;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 63px;
+}
+
+/* -- footer css part end -- */
